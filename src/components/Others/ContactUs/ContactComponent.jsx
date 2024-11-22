@@ -29,43 +29,7 @@ const ContactComponent = () => {
                 <p className="mt-2 text-sm text-gray-500 ">
                   Our friendly team is here to help.
                 </p>
-                <p className="mt-2 text-sm text-[#f58a1f]">
-                info@aaa-fe.com 
-                </p>
-              </div>
-
-              <div>
-                <span className="inline-block p-3 text-[#f58a1f] rounded-full bg-[#ffd3aa] ">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                    />
-                  </svg>
-                </span>
-
-                <h2 className="mt-4 text-base font-medium text-black ">
-                  Live chat
-                </h2>
-                <p className="mt-2 text-sm text-gray-500 ">
-                  Our friendly team is here to help.
-                </p>
-                <p className="mt-2 text-sm text-[#f58a1f]">
-                  Start new chat
-                </p>
+                <p className="mt-2 text-sm text-[#f58a1f]">info@aaa-fe.com</p>
               </div>
 
               <div>
@@ -98,8 +62,7 @@ const ContactComponent = () => {
                   Come say hello at our office HQ.
                 </p>
                 <p className="mt-2 text-sm text-[#f58a1f]">
-                Rupchaia, 3rd Floor, H 7, R 5, Rupnagar, Mirpur 1216, Bangladesh 
-
+                  House-774, Road-11, Avenue-02, Mirpur DOHS, Dhaka-1216
                 </p>
               </div>
 
@@ -127,9 +90,7 @@ const ContactComponent = () => {
                 <p className="mt-2 text-sm text-gray-500 ">
                   Sun-Thu from 9am to 6pm.
                 </p>
-                <p className="mt-2 text-sm text-[#f58a1f]">
-                +880 1922000025
-                </p>
+                <p className="mt-2 text-sm text-[#f58a1f]">+880 1922000025</p>
               </div>
             </div>
 

@@ -136,6 +136,15 @@ const Navbar = () => {
 
       <li>
         <Link
+          to="/gallery"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          Gallery
+        </Link>
+      </li>
+
+      <li>
+        <Link
           to="/blog"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >

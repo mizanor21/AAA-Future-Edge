@@ -37,7 +37,7 @@ const Footer = () => {
   };
 
   return (
-    <div className=" bg-orange-50">
+    <div className=" bg-orange-50 font-[Inter]">
       <footer className="footer text-black p-5 lg:p-[118px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-14">
         <aside className="">
           <img
@@ -46,10 +46,10 @@ const Footer = () => {
             alt="360d soul logo"
           />
           <div className="text-justify   font-medium font-['Inter']">
-            360D SOUL Limited has adopted the highest standards of IT service
-            and consultancy quality and operational excellence, enabling its
-            clients across a wide range of industries to transform into a truly
-            digital, data-driven enterprise.
+            AAA has adopted the highest standards of IT service and consultancy
+            quality and operational excellence, enabling its clients across a
+            wide range of industries to transform into a truly digital,
+            data-driven enterprise.
           </div>
           <div className="flex gap-3 my-[30px] ">
             <Link
@@ -67,10 +67,7 @@ const Footer = () => {
                 alt="AAA instagram logo"
               />
             </Link>
-            <Link
-              to="https://www.linkedin.com/company/360dsoul/posts"
-              target="_blank"
-            >
+            <Link to="https://www.linkedin.com/in/riadmahmud/" target="_blank">
               <FaLinkedin className="text-4xl  " alt="AAA linkedin logo" />
             </Link>
             <Link to="/" onClick={handleClick}>

@@ -15,6 +15,7 @@ import JobDetailPage from "../components/Others/Career/JobDetails";
 import HealthTourism from "../components/Others/Services/Health-Tourism/Health-Tourism";
 import ScopeOfWorks from "../components/Scope of works/ScopeOfWorks";
 import CoreServicesLayout from "../components/Others/Services/Core Services/CoreServicesLayout";
+import GalleryData from "../components/Others/Gallery/GalleryData";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
         element: <ContactUs></ContactUs>,
       },
       {
+        path: "/gallery",
+        element: <GalleryData />,
+      },
+      {
         path: "/blog",
         element: <Blogs></Blogs>,
       },
@@ -50,15 +55,15 @@ const router = createBrowserRouter([
         path: "/IT-Strategy",
         element: <ITStrategy></ITStrategy>,
       },
-      
+
       {
         path: "/Scope-of-works",
-        element:<ScopeOfWorks></ScopeOfWorks> ,
+        element: <ScopeOfWorks></ScopeOfWorks>,
       },
 
       {
         path: "/core-services",
-        element:<CoreServicesLayout></CoreServicesLayout> ,
+        element: <CoreServicesLayout></CoreServicesLayout>,
       },
       {
         path: "/HR-Strategy",
