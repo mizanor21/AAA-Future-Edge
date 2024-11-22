@@ -21,7 +21,7 @@ const PMISKPI = () => {
                 <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-4xl mb-4">
                   Grow business with <br></br>{" "}
                   <span className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0080E5] via-[#0059A0] to-[#0059A0]">
-                    PMIS & KPI
+                    PMS & KPI
                   </span>
                 </h2>
                 <div className="text-justify">

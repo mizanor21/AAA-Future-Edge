@@ -1,288 +1,149 @@
 import { Link } from "react-router-dom";
-import logo from "../../../assets/logo/Future-Edge.jpg";
-import email from "../../../assets/footer/email.png";
-import location from "../../../assets/footer/location.png";
-import telephone from "../../../assets/footer/telephone.png";
+import logo from "../../../../public/flogo.png";
 import { useState } from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import toast from "react-hot-toast";
-
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaSquareInstagram } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa6";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { BsFillTelephoneFill } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
-import { FaLocationDot } from "react-icons/fa6";
+import {
+  FaChevronDown,
+  FaChevronUp,
+  FaFacebookSquare,
+  FaLinkedin,
+  FaInstagram,
+  FaTwitter,
+} from "react-icons/fa";
+import { MdEmail, MdLocationOn } from "react-icons/md";
+import { BsTelephoneFill } from "react-icons/bs";
 
 const Footer = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const [isContactOpen, setIsContactOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
 
-  const toggleServicesDropdown = () => {
-    setIsServicesOpen(!isServicesOpen);
-  };
-
-  const toggleContactDropdown = () => {
-    setIsContactOpen(!isContactOpen);
-  };
-
-  const handleClick = () => {
-    toast.success("This feature is coming soon!");
-  };
-
   return (
-    <div className=" bg-orange-50 font-[Inter]">
-      <footer className="footer text-black p-5 lg:p-[118px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-14">
-        <aside className="">
+    <div className="bg-gray-900 text-white">
+      <footer className="container mx-auto px-5 lg:px-20 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        {/* About Section */}
+        <div>
           <img
-            className="w-[150px] lg:w-[235px] lg:h-[119px] mb-5"
+            className="w-[180px] lg:w-[250px] mb-6 bg-gradient-to-b from-gray-700 via-gray-800 to-gray-900 p-6 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-300 ease-in-out"
             src={logo}
-            alt="360d soul logo"
+            alt="Future Edge Logo"
           />
-          <div className="text-justify   font-medium font-['Inter']">
+          <p className="text-gray-400">
             AAA has adopted the highest standards of IT service and consultancy
-            quality and operational excellence, enabling its clients across a
-            wide range of industries to transform into a truly digital,
-            data-driven enterprise.
-          </div>
-          <div className="flex gap-3 my-[30px] ">
+            quality, enabling clients across industries to transform into truly
+            digital, data-driven enterprises.
+          </p>
+          <div className="flex gap-5 mt-6">
             <Link
               to="https://www.facebook.com/groups/796711704378134/"
               target="_blank"
+              aria-label="Facebook"
             >
-              <FaFacebookSquare
-                className="text-4xl  "
-                alt="AAA facebook logo"
-              />
+              <FaFacebookSquare className="text-2xl hover:text-blue-500 transition duration-300" />
             </Link>
-            <Link to="/" onClick={handleClick}>
-              <FaSquareInstagram
-                className="text-4xl  "
-                alt="AAA instagram logo"
-              />
-            </Link>
-            <Link to="https://www.linkedin.com/in/riadmahmud/" target="_blank">
-              <FaLinkedin className="text-4xl  " alt="AAA linkedin logo" />
-            </Link>
-            <Link to="/" onClick={handleClick}>
-              <FaSquareXTwitter className="text-4xl  " alt="AAA twitter logo" />
-            </Link>
-          </div>
-        </aside>
-
-        <nav>
-          <div className=" text-2xl md:text-4xl font-bold font-['Inter'] flex items-center justify-between">
-            <button
-              onClick={toggleDropdown}
-              className="focus:outline-none flex items-center md:hidden justify-between w-full text-xl"
-            >
-              Solutions
-              {isOpen ? (
-                <FaChevronUp className="ml-44" />
-              ) : (
-                <FaChevronDown className="ml-44" />
-              )}
-            </button>
-            <div className="hidden md:flex items-center">
-              <div>
-                Solutions
-                <div className="flex mt-3">
-                  <span className="border-[3px] border-[#f58a1f] w-[25px]"></span>
-                  <span className="border-[3px] border-[#898b8d] w-[30px]"></span>
-                  <span className="border-[3px] border-black w-[35px]"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          {isOpen && (
-            <div className="flex flex-col gap-3 mt-[25px] md:hidden">
-              <Link
-                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                to="/IT-Strategy"
-                className="link link-hover   text-[18px]"
-              >
-                IT Strategy
-              </Link>
-              <Link
-                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                to="/HR-Strategy"
-                className="link link-hover   text-[18px]"
-              >
-                HR Strategy
-              </Link>
-            </div>
-          )}
-          <div className="hidden md:flex flex-col gap-3 mt-[25px]">
             <Link
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              to="/"
+              onClick={() => alert("Coming soon!")}
+              aria-label="Instagram"
+            >
+              <FaInstagram className="text-2xl hover:text-pink-500 transition duration-300" />
+            </Link>
+            <Link
+              to="https://www.linkedin.com/in/riadmahmud/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin className="text-2xl hover:text-blue-300 transition duration-300" />
+            </Link>
+            <Link
+              to="/"
+              onClick={() => alert("Coming soon!")}
+              aria-label="Twitter"
+            >
+              <FaTwitter className="text-2xl hover:text-blue-400 transition duration-300" />
+            </Link>
+          </div>
+        </div>
+
+        {/* Solutions Section */}
+        <div>
+          <h3 className="text-xl font-bold mb-4">Solutions</h3>
+          <div className="space-y-3">
+            <Link
               to="/IT-Strategy"
-              className="link link-hover   text-[18px]"
+              className="hover:text-orange-500 transition duration-300"
             >
               IT Strategy
-            </Link>
+            </Link>{" "}
+            <br />
             <Link
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               to="/HR-Strategy"
-              className="link link-hover   text-[18px]"
+              className="hover:text-orange-500 transition duration-300"
             >
               HR Strategy
             </Link>
           </div>
-        </nav>
+        </div>
 
-        <nav>
-          <div className=" text-2xl md:text-4xl font-bold font-['Inter'] flex items-center justify-between">
-            <button
-              onClick={toggleServicesDropdown}
-              className="focus:outline-none flex items-center md:hidden justify-between w-full text-xl"
-            >
-              Services
-              {isServicesOpen ? (
-                <FaChevronUp className="ml-[195px]" />
-              ) : (
-                <FaChevronDown className="ml-[195px]" />
-              )}
-            </button>
-            <div className="hidden md:flex items-center">
-              <div>
-                Services
-                <div className="flex mt-3">
-                  <span className="border-[3px] border-[#f58a1f] w-[25px]"></span>
-                  <span className="border-[3px] border-[#898b8d] w-[30px]"></span>
-                  <span className="border-[3px] border-black w-[35px]"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          {isServicesOpen && (
-            <div className="flex flex-col gap-3 mt-[25px] md:hidden">
-              <Link
-                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                to="/IT-Services"
-                className="link link-hover   text-[18px]"
-              >
-                IT Services
-              </Link>
-              <Link
-                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                to="/HR-Services"
-                className="link link-hover   text-[18px]"
-              >
-                HR Services
-              </Link>
-              <Link
-                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                to="/Career-Counselling"
-                className="link link-hover   text-[18px]"
-              >
-                Career Counselling
-              </Link>
-            </div>
-          )}
-          <div className="hidden md:flex flex-col gap-3 mt-[25px]">
+        {/* Services Section */}
+        <div>
+          <h3 className="text-xl font-bold mb-4">Services</h3>
+          <div className="space-y-3">
             <Link
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               to="/IT-Services"
-              className="link link-hover   text-[18px]"
+              className="hover:text-orange-500 transition duration-300"
             >
               IT Services
             </Link>
+            <br />
             <Link
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               to="/HR-Services"
-              className="link link-hover   text-[18px]"
+              className="hover:text-orange-500 transition duration-300"
             >
               HR Services
             </Link>
+            <br />
             <Link
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               to="/Career-Counselling"
-              className="link link-hover   text-[18px]"
+              className="hover:text-orange-500 transition duration-300"
             >
               Career Counselling
             </Link>
           </div>
-        </nav>
+        </div>
 
-        <nav>
-          <div className=" text-2xl md:text-4xl font-bold font-['Inter'] flex items-center justify-between">
-            <button
-              onClick={toggleContactDropdown}
-              className="focus:outline-none flex items-center md:hidden justify-between w-full text-xl"
-            >
-              Contact Us
-              {isContactOpen ? (
-                <FaChevronUp className="ml-[173px]" />
-              ) : (
-                <FaChevronDown className="ml-[173px]" />
-              )}
-            </button>
-            <div className="hidden md:flex items-center">
-              <div>
-                Contact Us
-                <div className="flex mt-3">
-                  <span className="border-[3px] border-[#f58a1f] w-[25px]"></span>
-                  <span className="border-[3px] border-[#898b8d] w-[30px]"></span>
-                  <span className="border-[3px] border-black w-[35px]"></span>
-                </div>
-              </div>
+        {/* Contact Section */}
+        <div>
+          <h3 className="text-xl font-bold mb-4">Contact Us</h3>
+          <div className="space-y-4">
+            <div className="flex items-center gap-4">
+              <MdLocationOn className="text-2xl text-orange-500" />
+              <p>House-774, Road-11, Avenue-02, Mirpur DOHS, Dhaka-1216</p>
+            </div>
+            <div className="flex items-center gap-4">
+              <MdEmail className="text-2xl text-orange-500" />
+              <p>riadmahmud@gmail.com</p>
+            </div>
+            <div className="flex items-center gap-4">
+              <BsTelephoneFill className="text-2xl text-orange-500" />
+              <p>+8801922000025</p>
             </div>
           </div>
-          {isContactOpen && (
-            <div className="flex flex-col gap-3 mt-[25px] md:hidden">
-              <div className="flex gap-3">
-                <img src={location} alt="location" />
-                <a href="" className="  text-[18px]">
-                  House-774, Road-11, Avenue-02, Mirpur DOHS, Dhaka-1216
-                </a>
-              </div>
-              <div className="flex gap-3">
-                <img src={email} alt="email" />
-                <p className="  text-[18px]">info@360dsoul.com</p>
-              </div>
-              <div className="flex gap-3">
-                <img src={telephone} alt="telephone" />
-                <p className="  text-[18px]">+880 1922-000025</p>
-              </div>
-            </div>
-          )}
-          <div className="hidden md:flex flex-col gap-3 mt-[25px]">
-            <p className="text-justify   font-medium font-['Inter']">
-              We’re just a click away, ready to discuss your business needs and
-              provide the perfect IT solutions.
-            </p>
-            <div className="flex gap-3">
-              <FaLocationDot className="text-4xl   " alt="location" />
-
-              <a href="" className="  text-[18px]">
-                House-774, Road-11, Avenue-02, Mirpur DOHS, Dhaka-1216
-              </a>
-            </div>
-            <div className="flex gap-3">
-              <MdEmail className="text-3xl   " alt="email" />
-
-              <p className="  text-[18px]">riad@aaa-fe.com</p>
-            </div>
-            <div className="flex gap-3">
-              <BsFillTelephoneFill className="text-3xl  " alt="telephone" />
-
-              <p className="  text-[18px]">+8801922000025</p>
-            </div>
-          </div>
-        </nav>
+        </div>
       </footer>
-      <h5 className="text-center  font-[Inter] text-sm pb-10">
-        © 2024 Design & Developed By{" "}
-        <a href="https://360dsoul.com/" target="_blank">
-          <strong>360D Soul Ltd.</strong>
-        </a>
-      </h5>
+      <div className="text-center py-5 bg-gray-800">
+        <p className="text-sm text-gray-500">
+          © 2024 Design & Developed By{" "}
+          <a
+            href="https://360dsoul.com/"
+            target="_blank"
+            className="text-orange-500 hover:underline"
+          >
+            360D Soul Ltd.
+          </a>
+        </p>
+      </div>
     </div>
   );
 };

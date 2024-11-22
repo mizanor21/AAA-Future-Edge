@@ -1,13 +1,13 @@
-import React from 'react'
-
 const HRConsultancyResons = () => {
   return (
-    <div>    <div className="bg-white mt-4">
-    <div className="max-w-4xl mx-auto">
-      <h2 className="text-5xl font-bold text-center text-[#f58a1f] pt-4 mb-8">
-        Why Organizations Need HR Consultancy
-      </h2>
-      {/* <ul className="space-y-4 text-black">
+    <div>
+      {" "}
+      <div className="bg-white mt-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-5xl font-bold text-center text-[#f58a1f] pt-4 mb-8">
+            Why Organizations Need HR Consultancy
+          </h2>
+          {/* <ul className="space-y-4 text-black">
         {[
           "Company’s vision, mission, and values are not aligned with employees' career objectives.",
           "Performance management process is merely documentation and disconnected from real-time work.",
@@ -36,19 +36,30 @@ const HRConsultancyResons = () => {
         ))}
       </ul> */}
           {/* another try  */}
-      <div>
-          <p>
-          Organizations need HR consultancy to tackle critical challenges that impede growth and employee satisfaction. Misalignment between a company’s vision and employees' career objectives can lead to disengagement, while ineffective performance management fails to drive results. Undefined succession planning and a lack of alignment in leadership with growth strategies further hinder progress. <br />
-
-Additionally, excessive focus on people issues distracts from core business growth, and managers may find themselves bogged down in meetings instead of leading effectively. Low morale, increased absenteeism, and declining customer satisfaction can exacerbate recruitment challenges, leading to talent loss. <br />
-
-By seeking HR consultancy, organizations can streamline processes, resolve staff issues efficiently, and manage legal concerns, ultimately fostering a thriving, engaged workforce aligned with their goals. <br />
-          </p>
-
+          <div>
+            <p>
+              Organizations need HR consultancy to tackle critical challenges
+              that impede growth and employee satisfaction. Misalignment between
+              a company’s vision and employees career objectives can lead to
+              disengagement, while ineffective performance management fails to
+              drive results. Undefined succession planning and a lack of
+              alignment in leadership with growth strategies further hinder
+              progress. <br />
+              Additionally, excessive focus on people issues distracts from core
+              business growth, and managers may find themselves bogged down in
+              meetings instead of leading effectively. Low morale, increased
+              absenteeism, and declining customer satisfaction can exacerbate
+              recruitment challenges, leading to talent loss. <br />
+              By seeking HR consultancy, organizations can streamline processes,
+              resolve staff issues efficiently, and manage legal concerns,
+              ultimately fostering a thriving, engaged workforce aligned with
+              their goals. <br />
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-  </div></div>
-  )
-}
+  );
+};
 
-export default HRConsultancyResons
+export default HRConsultancyResons;
