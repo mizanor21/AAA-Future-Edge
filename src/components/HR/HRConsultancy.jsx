@@ -14,7 +14,7 @@ const HRConsultancy = () => {
 
           {/* Right Text */}
           <div className="w-full ">
-            <h2 className="text-5xl font-bold  text-[#f58a1f] pt-4 mb-8">
+            <h2 className="lg:text-4xl font-bold  text-[#f58a1f] pt-4 mb-8">
               Why Organizations Need HR Consultancy
             </h2>
             <p className="text-justify">

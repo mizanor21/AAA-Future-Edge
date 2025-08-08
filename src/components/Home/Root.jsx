@@ -6,16 +6,17 @@ import Hero from "./Hero/Hero";
 // import Reviews from "./Reviews/Reviews";
 import HRConsultancy from "../HR/HRConsultancy";
 import WhyChooseUs from "../Home/Our Clients/WhyChooseUs";
+import ClientLogoCarousel from "./NewClient/NewClient";
 const Root = () => {
   return (
     <div>
       <Hero />
       <About />
       {/* <Plan></Plan> */}
-
-      <TabsMain></TabsMain>
+      {/* <TabsMain></TabsMain> */}
       <HRConsultancy></HRConsultancy>
       <WhyChooseUs></WhyChooseUs>
+      <ClientLogoCarousel />
       {/* <Reviews></Reviews> */}
     </div>
   );

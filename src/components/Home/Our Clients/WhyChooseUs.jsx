@@ -6,7 +6,7 @@ const WhyChooseUs = () => {
     <div className="py-20" style={{ backgroundImage: `url(${bg})` }}>
       <div className="grid lg:grid-cols-2 gap-6 px-4 lg:container lg:mx-auto lg:max-w-[1300px]">
         <div className="firstpart  py-10">
-          <h5 className="mb-4 text-5xl font-bold leading-none text-[#f58a1f]  pt-3 font-[Inter]">
+          <h5 className="mb-4 lg:text-4xl font-bold leading-none text-[#f58a1f]  pt-3 font-[Inter]">
             WHY CHOOSE US
           </h5>
           <p className="mb-6 text-[#626366] pt-2 text-justify font-[Inter] ">
